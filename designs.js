@@ -17,12 +17,12 @@ $('#sizePicker').submit(function (e){
         $('.rows' + tr).append('<td></td>');
  }
  }
-$('td').click(function addColor(){
+$('td').click(function changeColor(){
   color=$('#colorPicker').val();
   if($(this).attr('style')){
     $(this).removeAttr('style');
   }else{
-    $(this).attr('style','background-color',color);
+    $(this).attr('style','background-color:' + color);
   }
 })
 }
