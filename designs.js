@@ -1,9 +1,8 @@
-// Select color input
 // Select size input
 var a,b,color;//height=a,width=b
 // When size is submitted by the user, call makeGrid()
 $('#sizePicker').submit(function (e){
-   e.preventDefault();
+   e.preventDefault();//In order to prevent Reloading page while submit
    a = $('#inputHeight').val();
    b = $('#inputWeight').val();
    makeGrid(a,b);
@@ -17,7 +16,9 @@ $('#sizePicker').submit(function (e){
         $('.rows' + tr).append('<td></td>');
  }
  }
-$('td').click(function changeColor(){
+ // Select color input
+  cell = 'td';
+ $(cell).click(function changeColor(){
   color=$('#colorPicker').val();
   if($(this).attr('style')){
     $(this).removeAttr('style');
