@@ -3,8 +3,8 @@ var a,b,color;//height=a,width=b
 // When size is submitted by the user, call makeGrid()
 $('#sizePicker').submit(function (e){
    e.preventDefault();//In order to prevent Reloading page while submit
-   a = $('#inputHeight').val();
-   b = $('#inputWeight').val();
+   a = $('#inputHeight').val();//height
+   b = $('#inputWeight').val();//width
    makeGrid(a,b);
  })
  // Your code goes here!
