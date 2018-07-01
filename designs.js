@@ -4,11 +4,11 @@ var height,width,color;
 // When size is submitted by the user, call makeGrid()
 $('#sizePicker').submit(function (event){
    event.preventDefault();
-   height = $('#inputHeight').val();
-   width = $('#inputWeight').val();
-   makeGrid(height, width);
+   a = $('#inputHeight').val();
+   b = $('#inputWeight').val();
+   makeGrid(a,b);
 })
-function makeGrid(x,y) {
+function makeGrid(a,b) {
   $('tr').remove();
 //console.log('Height:'+ height + 'and width:' + width);
 // Your code goes here!
