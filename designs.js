@@ -12,9 +12,9 @@ function makeGrid(a,b) {
   $('tr').remove();
 //console.log('Height:'+ height + 'and width:' + width);
 // Your code goes here!
-for (var i = 1; i <= x; i++) {
+for (var i = 1; i <= a; i++) {
      $('#pixelCanvas').append('<tr id=table' + i + '></tr>');
-     for (var j = 1; j <= y; j++) {
+     for (var j = 1; j <= b; j++) {
        $('#table' + i).append('<td></td>');
 }
 }
